@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'sayHello';
+  title = 'Bonjour !';
+  isAdmin:boolean = false;
+  
+
+  switchIsAdmin():void{
+    this.isAdmin ? this.isAdmin = false : this.isAdmin = true;
+  }
 }
+
+
